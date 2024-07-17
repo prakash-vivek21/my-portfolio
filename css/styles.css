@@ -88,10 +88,16 @@ header a {
   padding: 10px;
 }
 header a:hover {
-  color: black;
+  color: black !important;
   text-decoration: none;
   background: #dede50;
   border-radius: 4px;
+}
+header a:visited {
+  color: black !important; /* Link color after being clicked (visited) */
+}
+header a:active{
+  color: #000000 !important;
 }
 header a:focus {
   color: #dede50;
@@ -497,7 +503,7 @@ footer {
 .project {
   position: relative;
   width: 1000px;
-  height: 350px;
+  height: 300px;
   margin: 0 auto 30px auto;
   overflow: hidden;
   background: #ffffccd3;
@@ -907,6 +913,9 @@ a:any-link {
 .social-id a {
   color: #000000 !important;
 }
+.social-id{
+  margin-top: 3%;
+}
 .social-id span {
   cursor: pointer;
   display: inline-flex;
@@ -920,8 +929,9 @@ a:any-link {
   color: #000000;
   background-color: #fff9f9;
   text-align: center;
-  margin-top: 10%;
+  /* margin-top: 5%; */
 }
+
 .fa-chevron-up,
 .fa-chevron-down {
   transform: scale(100%) !important;
